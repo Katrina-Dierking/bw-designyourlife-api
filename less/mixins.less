@@ -1,0 +1,63 @@
+.displayFLex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.btn {
+    width:80%;
+    // height:15%;
+    background-color:@eastern-blue;
+    border-radius:30%;
+    margin:3% 10% 3% 2%;
+    padding:5%;
+
+    font-size:14px;
+    font-weight:500;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+}
+
+
+// paramixins
+
+.style (@width; @radius; @color; @padding; @mt; @float;){
+    width:@width;
+    border-radius:@radius;
+    background-color:@color;
+    padding:@padding;
+    margin-top:@mt; 
+    float:@float; 
+
+}
+
+.btn-text (@size; @weight; @f-color; @dec; @align;){
+        font-size:@size; 
+        font-weight:@weight;
+        color:@f-color; 
+        text-decoration:@dec; 
+        text-align:@align; 
+}
+  
+
+  //css for paramixins//
+
+   .btn {
+        .style(20%; 5%; @eastern-blue; 2%; 1%; left);
+        .btn-text(14px; 500;white; none; center);
+   }
+
+
+        // &:hover {
+        //   .btnChange();
+        //   border:1px solid black;
+        //   }
+    
+        //      @media @phone {
+        //             width:100%;
+        //             padding:4%;
+        //             border-radius:3%;
+        //       }
+          

@@ -168,3 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  width: 80%;
+  background-color: #17A2B8;
+  border-radius: 30%;
+  margin: 3% 10% 3% 2%;
+  padding: 5%;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
