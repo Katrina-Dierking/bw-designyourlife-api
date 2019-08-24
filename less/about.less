@@ -8,47 +8,58 @@
 @import "body.less";
 @import "footer.less";
 
-.home {
-    margin:0 auto;
-    max-width:900px;
+// .container {
+//     margin:0 auto;
+//     max-width:900px;
     
-      .header {
+      header {
         min-width:100%;
         display:inline-block;
         margin-top:2%;
-        border-bottom: 2px dashed @navigation-border;
+        // border-bottom: 2px dashed @navigation-border;
         }
         
-        h1 {
-        font-size:30px;
-        float:left;
-        margin-left:70px;
-      }
+        // h1 {
+        // font-size:;
+        // float:left;
+        // margin-left:70px;
+      
   
   .top-section {
-    margin-left:70px;
-    margin-right:70px;
-    border-bottom: 2px dashed @navigation-border;
+    // margin-left:70px;
+    // margin-right:70px;
+    // border-bottom: 2px solid @navigation-border;
+    padding-left:5%;
+    padding-right:5%;
   }
+
+  .top-img {
+    max-width:500px;
+  }
+  
     .content-section {
-      margin-left:70px;
-      margin-right:70px;
+      // margin-left:70px;
+      // margin-right:70px;
       padding-top:3%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      padding-left:3%;
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content: space-between;
   
      
       
       .text-content {
-        width: 48%;
-        padding-right: 1%;
+        width:95%;
+        margin:auto 0;
+        padding-left:3%;
+        // width: 48%;
+        // padding-right: 1%;
       }
   
       .img-content {
-        max-width:350px;
-        width: 48%;
-        padding-left: 1%;
+        // max-width:350px;
+        width: 70%;
+        padding-left:3%;
   
         img {
           border-radius: 10px;
@@ -58,11 +69,10 @@
   
     .inverse-content {
       padding-bottom: 30px;
-      border-bottom: 2px dashed @navigation-border;
   
       .text-content {
-        padding-left: 1%;
-        padding-right: 0;
+        padding-left: 5%;
+        padding-right: 5%;
       }
   
       .img-content {
@@ -70,9 +80,104 @@
         padding-left: 0;
       }
     }
+
+  .third-content-section .text-content {
+    padding-left:5%;
+    padding-right:5%;
   }
 
   .btn {
-    .style(20%; 5%; @black; 2%; 1%; left);
+    .style(75%; 5%; @black; 2%; 3%);
     .btn-text(14px; 500;white; none; center);
+    margin-left:10%;
   }
+
+  .team {
+    padding-left:5%;
+    padding-right:5%;
+  }
+
+  .middle {
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+  }
+
+.card {
+  cursor:pointer;
+  width:200px;
+  height:200px;
+  padding-bottom:15%;
+}
+
+.front,.back {
+  margin-left:20%;
+  width: 60%;
+  height:30%;
+  overflow: hidden; 
+  backface-visibility: hidden;
+  position:absolute;
+  transition: transform .6s linear;
+}
+
+// .front img {
+//   height:100%;
+// }
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.front .name {
+  text-align: center;
+}
+
+.back {
+  background:#f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+  height: 30%;
+  border: 2px solid #38524f; 
+}
+
+.back-content {
+color: #38524f;
+text-align: center;
+width: 100%;
+margin-top: 20%;
+}
+
+.icons {
+margin: 10px 0;
+}
+
+.icons a {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  color: #38524f;
+  font-size: 20px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.icon &:hover {
+  background: #38524f;
+  color: white;
+}
+
+.card-middle:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card-middle:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.footer {
+  width: 100%;
+  background: silver;
+}
+
