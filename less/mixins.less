@@ -4,23 +4,6 @@
     align-items:@align;
 }
 
-.btn {
-    width:80%;
-    // height:15%;
-    background-color:@eastern-blue;
-    border-radius:30%;
-    margin:3% 10% 3% 2%;
-    padding:5%;
-
-    font-size:14px;
-    font-weight:500;
-    color:white;
-    text-decoration:none;
-    text-align:center;
-    cursor:pointer;
-}
-
-
 // paramixins
 
 .style (@width; @radius; @color; @padding; @mt;){
@@ -41,15 +24,29 @@
         text-decoration:@dec; 
         text-align:@align; 
 }
+
+.btn2-text (@size; @weight; @f-color; @dec; @align;){
+    font-size:@size; 
+    font-weight:@weight;
+    color:@f-color; 
+    text-decoration:@dec; 
+    text-align:@align; 
+}
   
 
   //css for paramixins//
 
    .btn {
-        .style(20%; 5%; @eastern-blue; 2%; 1%);
-        .btn-text(14px; 500;white; none; center);
-   }
-
+    .style(85%; 5%; @green; 2%; 3%);
+    .btn-text(14px; 500;white; none; center);
+        margin-left:10%;
+  }
+  .btn2 {
+    .style(100%; 5%; @green; 2%; 3%);
+    .btn-text(14px; 500;white; none; center);
+        // margin-left:10%;
+        
+  }
 
         // &:hover {
         //   .btnChange();
