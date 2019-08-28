@@ -24,7 +24,7 @@
 
     @media @tablet {
       max-width: 700px;
-     margin-left:12%;
+      margin-left:12%;
     }
   }
   .border-img {
@@ -35,27 +35,37 @@
 
   .border-img2 {
     @media @tablet {
+      margin-left:25%;
+      margin-top:5%;
+    }
+  }
+
+  .border-img3 {
+    @media @tablet {
       margin-left:5%;
     }
   }
   
-.content-section {
+.top-content-section {
     padding-top:3%;
     padding-left:3%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:flex-start;
 
     .text-content {
         width:95%;
         margin:auto 0;
         padding-left:3%;
+
+        @media @tablet {
+          width:50%;
+          padding:1%;
+        }
       }
     }
-
-  // .center-imgs {
-  //   display:flex;
-  //   flex-direction:row;
-  //   flex-wrap:no-wrap;
-  //   width: 100%;
-  // }
 
     .enjoyment {
     max-width: 60%;
@@ -63,50 +73,52 @@
     padding: 3%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
-
-    @media @tablet {
-       display:none;
-       }
-    }
-
-    .energized {
-      display:none;
-
-      @media @tablet {
-       display:block;
-       max-width:30%;
-       max-height:50%;
-       margin-top: 8%;
-       margin-left: 5%;
-       padding: 1%;
-       border-radius: 10px;
-       box-shadow: 5px 5px 5px grey;
-      }
-    }
+   }
+    
 
   .energized-section {
-    margin-top:5%;
-
     @media @tablet {
-    display: flex;
-    flex-direction:column;
+    margin-top:5%;
+    display:flex;
+    flex-direction:row;
     flex-wrap:wrap;
-    align-text: wrap;
+    justify-content:space-around;
+    align-content:flex-start;
     width: 100%;
     }
   }
-    
- .energized-section .energized .energized-text {
+
+  .energized {
+    display:none;
+
     @media @tablet {
-      max-width:50%;
-      margin-top: 3%;
+     display:block;
+     max-width:30%;
+     max-height:50%;
+     margin-top: 2%;
+     margin-left: 5%;
+     padding: 1%;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px grey;
+    }
+  }
+    
+.energized-text {
+    @media @tablet {
+      max-width:60%;
+      margin-top: 7%;
      }
   }
       
   
 .third-content-section {
-  padding-left:5%;
+  padding-left:2%;
   padding-right:5%;
+  display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:flex-start;
 
       .img-content {
         width: 70%;
@@ -124,16 +136,30 @@
         padding-right: 5%;
       }
     
+      .aside {
+        display:none;
+
+        @media @tablet {
+          display:block;
+        max-width:40%;
+        border-left: .02px solid black;
+        padding: 2%;
+        margin-top: 5%;
+        font-style: italic;
+      } 
+    }
 
   .third-content-section .text-content {
     padding-left:5%;
     padding-right:5%;
+    max-width:100%;
   }
 
   .third-content-section .img-content {
       width: 90%;
       align-content: center;
-      margin-left:4%;
+      // margin-left:4%;
+      margin-top:5%;
   }
 
   .team {
@@ -148,6 +174,14 @@
     border: .5px solid #38524f;
     min-height:100%;
     margin: 3%;
+
+    @media @tablet {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:flex-start;
+    }
   }
 
 .Meet-Our-Team {
@@ -156,21 +190,17 @@
   margin-right:5%;
 }
 
-.kayla, .adrian, .brian, .katrina {
+.kayla, .adrian, .brian, .katrina, .james {
   position:relative;
   width: 100%;
-  // padding-left:5%;
-  // padding-right:3%;
   margin-top:3%;
   padding: 3%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
 
   @media @tablet {
-    max-width:50%;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
+    max-width:45%;
+    padding: 1%;
 
     @media @desktop {
       max-width:50%;
@@ -178,7 +208,7 @@
   }
 }
 
-.kayla-img, .adrian-img, .brian-img, .katrina-img {
+.kayla-img, .adrian-img, .brian-img, .katrina-img, .james-img {
   width: 100%;
   height: auto;
 }
@@ -190,16 +220,15 @@
   left: 3%;
   right: 0;
   height: 100%;
-  width: 95%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: @green;
-  padding:1.5%;
-  opacity: 5%;
 }
 
 .kayla:hover .overlay, .adrian:hover .overlay, 
-.brian:hover .overlay, .katrina:hover .overlay {
+.brian:hover .overlay, .katrina:hover .overlay,
+.james:hover .overlay  {
   opacity: 1;
   transform: rotateY(180deg);
 }

@@ -220,17 +220,34 @@ header {
 }
 @media (min-width:700px) {
   .border-img2 {
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+}
+@media (min-width:700px) {
+  .border-img3 {
     margin-left: 5%;
   }
 }
-.content-section {
+.top-content-section {
   padding-top: 3%;
   padding-left: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
 }
-.content-section .text-content {
+.top-content-section .text-content {
   width: 95%;
   margin: auto 0;
   padding-left: 3%;
+}
+@media (min-width:700px) {
+  .top-content-section .text-content {
+    width: 50%;
+    padding: 1%;
+  }
 }
 .enjoyment {
   max-width: 60%;
@@ -240,8 +257,14 @@ header {
   box-shadow: 5px 5px 5px grey;
 }
 @media (min-width:700px) {
-  .enjoyment {
-    display: none;
+  .energized-section {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    width: 100%;
   }
 }
 .energized {
@@ -252,34 +275,27 @@ header {
     display: block;
     max-width: 30%;
     max-height: 50%;
-    margin-top: 8%;
+    margin-top: 2%;
     margin-left: 5%;
     padding: 1%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
   }
 }
-.energized-section {
-  margin-top: 5%;
-}
 @media (min-width:700px) {
-  .energized-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-text: wrap;
-    width: 100%;
-  }
-}
-@media (min-width:700px) {
-  .energized-section .energized .energized-text {
-    max-width: 50%;
-    margin-top: 3%;
+  .energized-text {
+    max-width: 60%;
+    margin-top: 7%;
   }
 }
 .third-content-section {
-  padding-left: 5%;
+  padding-left: 2%;
   padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
 }
 .third-content-section .img-content {
   width: 70%;
@@ -292,14 +308,28 @@ header {
   padding-left: 5%;
   padding-right: 5%;
 }
+.aside {
+  display: none;
+}
+@media (min-width:700px) {
+  .aside {
+    display: block;
+    max-width: 40%;
+    border-left: 0.02px solid black;
+    padding: 2%;
+    margin-top: 5%;
+    font-style: italic;
+  }
+}
 .third-content-section .text-content {
   padding-left: 5%;
   padding-right: 5%;
+  max-width: 100%;
 }
 .third-content-section .img-content {
   width: 90%;
   align-content: center;
-  margin-left: 4%;
+  margin-top: 5%;
 }
 .team {
   display: flex;
@@ -313,6 +343,15 @@ header {
   min-height: 100%;
   margin: 3%;
 }
+@media (min-width:700px) {
+  .team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+}
 .Meet-Our-Team {
   width: 100%;
   margin-left: 5%;
@@ -321,7 +360,8 @@ header {
 .kayla,
 .adrian,
 .brian,
-.katrina {
+.katrina,
+.james {
   position: relative;
   width: 100%;
   margin-top: 3%;
@@ -333,25 +373,26 @@ header {
   .kayla,
   .adrian,
   .brian,
-  .katrina {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  .katrina,
+  .james {
+    max-width: 45%;
+    padding: 1%;
   }
 }
 @media (min-width:700px) and (min-width:1024) {
   .kayla,
   .adrian,
   .brian,
-  .katrina {
+  .katrina,
+  .james {
     max-width: 50%;
   }
 }
 .kayla-img,
 .adrian-img,
 .brian-img,
-.katrina-img {
+.katrina-img,
+.james-img {
   width: 100%;
   height: auto;
 }
@@ -362,17 +403,16 @@ header {
   left: 3%;
   right: 0;
   height: 100%;
-  width: 95%;
+  width: 100%;
   opacity: 0;
   transition: 0.5s ease;
   background-color: #38524f;
-  padding: 1.5%;
-  opacity: 5%;
 }
 .kayla:hover .overlay,
 .adrian:hover .overlay,
 .brian:hover .overlay,
-.katrina:hover .overlay {
+.katrina:hover .overlay,
+.james:hover .overlay {
   opacity: 1;
   transform: rotateY(180deg);
 }
