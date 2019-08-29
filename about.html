@@ -11,33 +11,48 @@
 </head>
 <body>
 
-  <!-- <div class="container"> -->
-  
-        <header>
-          <nav>
-            <a href="./index.html">home</a>
-            <a href="./about.html">about</a>
-            <a href="./product.html">product</a>
-            <a href="./login.html">login</a>
+
+      <header>
+          <!-- add hamburger menu, will transform to an X to close and be responsive-->
+          <div class="row">
+              <div class="menu-btn">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </div>
+          </div>
+          <nav class="menu">
+            <ul class="menu-nav">
+              <li class="nav-item current">
+                <a href="./index.html">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about.html">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="./product.html">product</a>
+              </li>
+              <li class="nav-item">
+                <a class="open-login-modal">log in</a>
+              </li>
+            </ul>
           </nav>
         </header>
     
-        <div class="top-section">
-            <div class="top-img">
-              <img src="img/your-life2.png" alt="Design Your Life!">
-              </div>
-            <h1>About Design Your Life!</h1>
-            <p>The Design Your Life app helps you figure out which activities bring you enjoyment, energy, and engagement. 
-              These clues are the first step you need to take to design your ideal life.</p>
+        <div class="about-section">
+           <img src="img/your-life2.png" alt="Design Your Life!" class="top-img">
+              <h1>About Design Your Life!</h1>
+               <p>The Design Your Life app helps you figure out which activities bring you enjoyment, energy, and engagement. 
+               These clues are the first step you need to take to design your ideal life.</p>
             
-            <p> Activity logs record daily your main activities, and a gauge to show how engaged and energized you were. 
+              <p> Activity logs record daily your main activities, and a gauge to show how engaged and energized you were. 
               Reflection logs are done once a week to record your trends, insights and surprises as to what activities work and don't work for you.
             </p>
             <img src="img/border.png" alt="Design Your Life!" class="border-img">
           </div>
 
         <section class="top-content-section">
-            <div class="text-content">
+            <div class="top-text-content">
               <h2>Enjoyment</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -45,54 +60,43 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
   
-             <div class="center-imgs">
-                <div class="enjoyment">
-                 <img src="img/enjoyment.png" alt="Design Your Life!">
-                </div>
-             </div>
-         </section>
+            <img src="img/enjoyment.png" alt="Design Your Life!" class="enjoyment">
+        </section>
 
 
         <section class="energized-section">
-              <div class="energized">
-                <img src="img/energized.png" alt="Design Your Life!">
-              </div>
-
+           <img src="img/energized.png" alt="Design Your Life!" class="energized">
                <br>
-
-            <div class="energized-text">
+              <div class="energized-text">
                 <h2>Energized</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+              </div>
         </section>
 
-        <img src="img/border.png" alt="Design Your Life!" class="border-img2">
+        <img src="img/border.png" alt="Design Your Life!" class="border-img">
            
-        <section class="third-content-section">
-           <div class="text-content">
-                <h2>Engaged</h2>
+        <section class="engaged-section">
+          <h2>Engaged</h2>
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-           </div>
-
-           <aside class="aside">
-              <p>"Lead a life of your own design, on your own terms. 
-                Not one that others or the environment have scripted for you.”</p>
-                <p>~Tony Robbins</p>
-            </aside>
       
-          <div class="img-content">
-                <img src="img/engagement.jpg" alt="Get engaged with the world around you!">
+                    <img src="img/engagement.png" alt="Get engaged with the world around you!" class="engage-img">
+          </section>
+
+              <aside class="aside">
+                    <p>"Lead a life of your own design, on your own terms. 
+                      Not one that others or the environment have scripted for you.”</p>
+                      <p>~Tony Robbins</p>
+                  </aside>
+
                  <div class="btn">Sign Me Up!</div>
-                  </div>
+            
                 <img src="img/border.png" alt="Design Your Life!" class="border-img">
-    
-         </section>
 
 
 <!-- Meet our members section -->
@@ -174,13 +178,13 @@
                     <a href="https://www.linkedin.com/in/james-starks-2547b392/" class="icon3"><i class="fab fa-linkedin"></i></a>
                     </div>
             </section>
+      </section>
 
-                <img src="img/border.png" alt="Design Your Life!" class="border-img3">
-                <p>Don't miss out on this great opportunity to design the life you've always imagined.</p>
-                 <div class="btn2">Sign Me Up!</div>
-       </section>
+  
+          <img src="img/border.png" alt="Design Your Life!" class="border-img">
+             <div class="btn2">Sign Me Up!</div>
       
-    
+
 <footer class="footer">
       <br>
         <p><center>Copyright Design Your Life 2019</center></p>
